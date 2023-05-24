@@ -10,6 +10,7 @@
   retries: 12
   delay: 10
 - name: touch stig.rules
+  become: true
   file:
     path: /etc/audit/rules.d/stig.rules
     state: touch
