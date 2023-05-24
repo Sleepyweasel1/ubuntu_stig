@@ -1,6 +1,7 @@
 - name: populate package facts
   package_facts:
 - name: install auditd
+  become: true
   apt:
     name: auditd
     state: present
