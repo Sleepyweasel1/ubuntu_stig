@@ -43,6 +43,7 @@
     - "'gdm3' in packages"
 # R-238200 UBTU-20-010005
 - name: stigrule_238200_vlock
+  become: true
   apt:
     name: vlock
     state: "{{ ubuntu2004STIG_stigrule_238200_vlock_State }}"
@@ -125,6 +126,7 @@
     - ubuntu2004STIG_stigrule_238214_Manage
 # R-238215 UBTU-20-010042
 - name: stigrule_238215_ssh
+  become: true
   apt:
     name: ssh
     state: "{{ ubuntu2004STIG_stigrule_238215_ssh_State }}"
